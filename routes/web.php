@@ -34,6 +34,14 @@ Route::get('/mes/delete/{id}', 'MesController@delete');
 Route::get('/mes/edit/{id}','MesController@edit');
 Route::post('/mes/update/{id}', 'MesController@update');
 
+Route::get('/pago/pago', 'PagoController@index');
+Route::get('/pago/create', 'PagoController@create');
+Route::post('pago/store', 'PagoController@store');
+Route::get('/pago/detalle/{id}', 'PagoController@show');
+Route::get('/pago/delete/{id}', 'PagoController@delete');
+
+Route::get('/factura/factura', 'FacturaController@index');
+
 Route::get('/', function () {
     return view('welcome');
 });

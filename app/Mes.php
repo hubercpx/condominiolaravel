@@ -12,4 +12,5 @@ class Mes extends Model
   protected $fillable=[
     'nombre'
   ];
+
 }

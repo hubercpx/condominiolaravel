@@ -10,15 +10,7 @@ class Pago extends Model
   protected $primaryKey = 'id';
   public    $timestamps=false;
   protected $fillable=[
-    'empleado_id'
+    'fecha'
   ];
-  public function empleado(){
-      return $this->belongsTo('Empledo');
-   }
-  public function residente(){
-      return $this->belongsTo('Residente');
-    }
-  public function mes(){
-     return $this->belongsTo('Mes');
-   }
+
 }

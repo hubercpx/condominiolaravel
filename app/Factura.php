@@ -4,13 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Residente extends Model
+class Factura extends Model
 {
-  protected $table='residente';
+  protected $table='factura';
   protected $primaryKey = 'id';
   public    $timestamps=false;
-  protected $fillable=[
-    'nombre'
-  ];
 
 }
