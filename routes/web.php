@@ -41,6 +41,9 @@ Route::get('/pago/detalle/{id}', 'PagoController@show');
 Route::get('/pago/delete/{id}', 'PagoController@delete');
 
 Route::get('/factura/factura', 'FacturaController@index');
+Route::get('/factura/detalle/{id}', 'FacturaController@show');
+Route::get('/factura/delete/{id}', 'FacturaController@delete');
+
 
 Route::get('/', function () {
     return view('welcome');
